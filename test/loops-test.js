@@ -53,14 +53,14 @@ describe('loops', () => {
     })
   })
 
-  describe('doWhileLoop(array)', () => {
-		it('removes elements from `array` until `array` is empty or until `incrementVariable()` returns `false`', () => {
-			const [array, t] = makeArray();
-			const l = array.length;
+   describe('iLoveTheBeatles', function() {
+    it("returns an array of 'I love the Beatles!' 8 times when passed the parameter 7 ", function() {
+      expect(iLoveTheBeatles(7)).toEqual(["I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!"]);
+    });
 
-			const newArray = doWhileLoop(array);
+    it("returns an array of 'I love the Beatles!' once when passed the parameter 17", function() {
+      expect(iLoveTheBeatles(15)).toEqual(["I love the Beatles!"]);
+    });
+  });
 
-			expect(newArray).to.have.length.of.at.most(l - 1);
-		});
-	});
 });
